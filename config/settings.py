@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "crispy_bootstrap5",
     'allauth',
     'allauth.account',
+    'rosetta',
 
     # local apps
     'accounts.apps.AccountsConfig',
@@ -138,6 +139,16 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # LANGUAGE_CODE = 'en-us'
 LANGUAGE_CODE = 'fa'
 
+# rosetta
+LANGUAGES = (
+    ('en', 'English'),
+    ('fa', 'Persian')
+)
+LOCALE_PATHS = (
+    'templates/locale',
+)
+
+
 # TIME_ZONE = 'UTC'
 TIME_ZONE = 'Asia/Tehran'
 
@@ -173,3 +184,4 @@ ACCOUNT_UNIQUE_EMAIL = True
 # crispy
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
