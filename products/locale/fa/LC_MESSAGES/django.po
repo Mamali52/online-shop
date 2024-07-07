@@ -8,14 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-27 09:02-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2024-07-04 09:39-0700\n"
+"PO-Revision-Date: 2024-07-04 09:40+0330\n"
+"Last-Translator:   <mamadjavad1382s21@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: .\models.py:31
 msgid "very bad"
@@ -55,30 +56,43 @@ msgstr "امتیاز شما"
 msgid "Product details of"
 msgstr "توضیحات محصول"
 
-#: .\templates\products\product_detail.html:41
+#: .\templates\products\product_detail.html:43
 msgid "$"
 msgstr "تومان"
 
-#: .\templates\products\product_detail.html:52
+#: .\templates\products\product_detail.html:57
 msgid "Add To Cart"
 msgstr "اضافه به سبد خرید"
 
-#: .\templates\products\product_detail.html:56
+#: .\templates\products\product_detail.html:64
 msgid "categories"
 msgstr "دسته بندی ها"
 
-#: .\templates\products\product_detail.html:71
+#: .\templates\products\product_detail.html:80
 msgid "Product Description"
 msgstr "توضیحات محصول"
 
-#: .\templates\products\product_detail.html:148
+#: .\templates\products\product_detail.html:167
 msgid "Write Your Comment"
 msgstr "نظر خود را بنویسید"
 
-#: .\templates\products\product_detail.html:155
+#: .\templates\products\product_detail.html:174
 msgid "Submit"
 msgstr "ارسال"
 
-#: .\views.py:11
-msgid "Hello World!"
-msgstr "سلام دنیا"
+#: .\templates\products\product_detail.html:178
+#, fuzzy
+#| msgid "Write Your Comment"
+msgid "To write your comment please "
+msgstr "نظر خود را بنویسید"
+
+#: .\templates\products\product_detail.html:179
+msgid "Login"
+msgstr "وارد شدن"
+
+#: .\views.py:38
+msgid "Your comment has been added."
+msgstr "نظر شما اضافه شد."
+
+#~ msgid "Hello World!"
+#~ msgstr "سلام دنیا"
