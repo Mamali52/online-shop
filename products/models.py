@@ -9,14 +9,15 @@ from ckeditor.fields import RichTextField
 
 
 class Product(models.Model):
-    title = models.CharField(max_length=100)
-    description = RichTextField()
-    price = models.PositiveIntegerField(default=0)
-    active = models.BooleanField(default=True)
+    title = models.CharField(max_length=100, verbose_name=_('Title'))
+    description = RichTextField(verbose_name=_('Description'))
+    short_description = models.TextField(blank=True, verbose_name=_('Short Description'))
+    price = models.PositiveIntegerField(default=0, verbose_name=_('Price'))
+    active = models.BooleanField(default=True, verbose_name=_('Active'))
     image = models.ImageField(upload_to="product/product_cover/", verbose_name=_("Product Image"), blank=True)
 
     datetime_created = models.DateTimeField(default=timezone.now, verbose_name=_("Product Created"))
-    datetime_modified = models.DateTimeField(auto_now=True)
+    datetime_modified = models.DateTimeField(auto_now=True, verbose_name=_("Product Modified"))
 
     def __str__(self):
         return self.title
@@ -52,10 +53,10 @@ class Comment(models.Model):
 
     stars = models.CharField(max_length=10, choices=PRODUCT_STARS, verbose_name=_('Score'))
 
-    datetime_created = models.DateTimeField(auto_now_add=True)
-    datetime_modified = models.DateTimeField(auto_now=True)
+    datetime_created = models.DateTimeField(auto_now_add=True, verbose_name=_("Comment Created"))
+    datetime_modified = models.DateTimeField(auto_now=True, verbose_name=_("Comment Modified"))
 
-    active = models.BooleanField(default=True)
+    active = models.BooleanField(default=True, verbose_name=_('Active'))
 
     # Manager
     objects = models.Manager()

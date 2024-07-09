@@ -40,16 +40,16 @@ msgstr "رفتن به فروشگاه"
 
 #: .\templates\cart\cart_sidebar.html:27 .\templates\cart\cart_sidebar.html:36
 msgid "$"
-msgstr ""
+msgstr "تومان"
 
 #: .\templates\cart\cart_sidebar.html:35
 msgid "Total"
-msgstr ""
+msgstr "جمع"
 
 #: .\templates\cart\cart_sidebar.html:40
 msgid "Go to cart"
-msgstr ""
+msgstr "برو به سبد خرید"
 
 #: .\templates\cart\cart_sidebar.html:41
 msgid "Checkout"
-msgstr ""
+msgstr "پرداخت"
