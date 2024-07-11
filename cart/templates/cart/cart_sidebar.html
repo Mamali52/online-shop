@@ -10,7 +10,7 @@
                 <h3 class="mini-cart__heading mb--40 mb-lg--30 text-right">{% trans 'Cart' %}</h3>
                 <div class="mini-cart__content">
                     <ul class="mini-cart__list text-right">
-    
+
                         {% for item in cart %}
                             <li class="mini-cart__product d-flex justify-content-between">
                                 <div class="mini-cart__product__image">
@@ -31,7 +31,7 @@
                                 </div>
                             </li>
                         {% endfor %}
-    
+
                     </ul>
                     <div class="mini-cart__total">
                         <span>{% trans 'Total' %}</span>
@@ -40,10 +40,16 @@
                     <div class="mini-cart__buttons">
                         <a href="{% url 'cart:cart_detail' %}"
                            class="btn btn-fullwidth btn-bg-sand mb--20">{% trans 'Go to cart' %}</a>
-                        <a href="checkout.html" class="btn btn-fullwidth btn-bg-sand">{% trans 'Checkout' %}</a>
+                        {% if not cart.is_empty %}
+                        	<a href="{% url 'order_create' %}" class="btn btn-fullwidth btn-bg-sand">{% trans 'Checkout' %}</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
         </div>
     </aside>
     <!-- Mini Cart End -->
+
+    <!-- Global Overlay Start -->
+    <div class="ShoppingYar-global-overlay"></div>
+    <!-- Global Overlay End -->

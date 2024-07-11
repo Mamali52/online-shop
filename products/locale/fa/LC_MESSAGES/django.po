@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-09 10:04-0700\n"
-"PO-Revision-Date: 2024-07-04 09:40+0330\n"
-"Last-Translator:   <mamadjavad1382s21@gmail.com>\n"
+"POT-Creation-Date: 2024-07-11 14:04-0700\n"
+"PO-Revision-Date: 2024-07-11 14:05+0330\n"
+"Last-Translator: محمد جواد صادقی <mamadjavad1382s21@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -137,6 +137,11 @@ msgstr "نظر خود را بنویسید"
 #: .\templates\products\product_detail.html:174
 msgid "Login"
 msgstr "وارد شدن"
+
+#: .\templates\products\product_list.html:66
+#| msgid "Add To Cart"
+msgid "Add to cart"
+msgstr "اضافه به سبد خرید"
 
 #: .\views.py:38
 msgid "Your comment has been added."

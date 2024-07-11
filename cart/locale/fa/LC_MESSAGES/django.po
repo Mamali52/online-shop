@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-07 09:16-0700\n"
-"PO-Revision-Date: 2024-07-04 09:23+0330\n"
-"Last-Translator:   <mamadjavad1382s21@gmail.com>\n"
+"POT-Creation-Date: 2024-07-11 13:16-0700\n"
+"PO-Revision-Date: 2024-07-11 13:16+0330\n"
+"Last-Translator: محمد جواد صادقی <mamadjavad1382s21@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,30 +26,44 @@ msgstr "محصول با موفقیت به سبد خرید اضافه شد"
 msgid "Product successfully removed from cart"
 msgstr "محصول با موفقیت از سبد خرید حذف شد"
 
-#: .\templates\cart\cart_detail.html:13 .\templates\cart\cart_sidebar.html:8
+#: .\templates\cart\cart_detail.html:16 .\templates\cart\cart_sidebar.html:10
 msgid "Cart"
 msgstr "سبد خرید"
 
-#: .\templates\cart\cart_detail.html:92
-msgid "Cart is Empty! Please add some product to the cart"
-msgstr "سبد خرید شما خالی است! لطفا مقداری محصول را به سبد خرید اضافه کنید"
-
-#: .\templates\cart\cart_detail.html:93
-msgid "Go Shopping"
-msgstr "رفتن به فروشگاه"
-
-#: .\templates\cart\cart_sidebar.html:27 .\templates\cart\cart_sidebar.html:36
+#: .\templates\cart\cart_detail.html:62 .\templates\cart\cart_detail.html:83
+#: .\templates\cart\cart_detail.html:121 .\templates\cart\cart_sidebar.html:29
+#: .\templates\cart\cart_sidebar.html:38
 msgid "$"
 msgstr "تومان"
 
-#: .\templates\cart\cart_sidebar.html:35
+#: .\templates\cart\cart_detail.html:94
+msgid "Cart is Empty! Please add some product to the cart"
+msgstr "سبد خرید شما خالی است! لطفا مقداری محصول را به سبد خرید اضافه کنید"
+
+#: .\templates\cart\cart_detail.html:95
+msgid "Go Shopping"
+msgstr "رفتن به فروشگاه"
+
+#: .\templates\cart\cart_detail.html:104
+msgid "Empty the shopping cart"
+msgstr "خالی کردن سبد خرید"
+
+#: .\templates\cart\cart_sidebar.html:37
 msgid "Total"
 msgstr "جمع"
 
-#: .\templates\cart\cart_sidebar.html:40
+#: .\templates\cart\cart_sidebar.html:42
 msgid "Go to cart"
 msgstr "برو به سبد خرید"
 
-#: .\templates\cart\cart_sidebar.html:41
+#: .\templates\cart\cart_sidebar.html:43
 msgid "Checkout"
 msgstr "پرداخت"
+
+#: .\views.py:55
+msgid "Cart cleared"
+msgstr "سبد خرید پاک شد"
+
+#: .\views.py:57
+msgid "No cart items found"
+msgstr "هیچ کالای سبد خرید یافت نشد"
